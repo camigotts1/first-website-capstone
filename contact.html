@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Trader Hoe - Survey</title>
+    </head>
+    <body>
+           <!--Header with links to other pages-->
+           <div class="top-of-page">
+            <a href="article.html" target="_self">
+            <img src="trader_hoe_logo.png"
+            alt="Trader Hoe Website Logo"
+            class="trader-hoe-logo"></a>
+        <div class="navBar">
+            <a href="article.html">Latest Article</a>
+            <a href="products.html">Products We Love</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        </div>
+
+        <h1>Are you a Trader Hoe?</h1>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset class="contact-form">
+            <legend>Contact Us</legend>
+
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+            <p class="form-message">Have a good experience at Trader Joe's? Wish they sold your favorite
+                products? Maybe an interesting story to tell? Let us know down below!
+            </p>
+            <div>
+                <label for="subject">Subject</label>
+                <select id="rubject" name="msg_subject">
+                <option value="review">Review a product</option>
+                <option value="request_prod">Request a product</option>
+                <option value="request_loc">Request a new location</option>
+                <option value="story">My own TJ's experience</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+
+
+            <div>
+            <!--<label for="comments">Comments</label>-->
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div>
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label for="signup">Sign up for newsletter</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms"> Agree to terms and conditions</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            </fieldset>
+        </form>
+
+        <div class="bottom-of-page">
+            <p>Thanks for reading :)</p>
+        </div>
+    </body>
+</html>
